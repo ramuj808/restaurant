@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Project</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="../index.html">KANAK ATTACK</a>
+    </header>
+
+    <h2 class="menu">Take Out Menu</h2>
+
+    <div id="checkoutFinal">
+      <h4>Cart:</h4>
+      <p id="cartItems"></p>
+      <h4>Total:</h4>
+      <div id="total"></div>
+    </div>
+
+    <div id="menu" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          <h3 class="item">Poke Nachos</h3>
+          <img
+            src="../img/Poke-Nachos-9-683x1024.webp"
+            alt="Poke Nacho!"
+            width="300px"
+            height="400px"
+          />
+          <p class="price">$10.00</p>
+          <p>
+            Qty:<input
+              id="poke-quantity"
+              class="quantity"
+              type="number"
+              min="0"
+              max="8"
+              size="30"
+            />
+          </p>
+          <button class="button" type="button" id="addItem" onclick="addPoke()">
+            Add to Cart
+          </button>
+          <button class="button" type="button" id="removeItem">Remove</button>
+        </div>
+
+        <div class="col-sm-4">
+          <h3 class="item">Shoyu Chicken Plate</h3>
+          <img
+            src="../img/Shoyu-Chicken-1.jpg"
+            alt="Shoyu Chicken all over rice"
+            width="300px"
+            height="400px"
+          />
+          <p id="price">$12.00</p>
+          <p>
+            Qty:<input
+              id="chicken-quantity"
+              type="number"
+              min="0"
+              max="8"
+              size="30"
+            />
+          </p>
+          <button
+            class="button"
+            type="button"
+            id="addItem"
+            onclick="addChicken()"
+          >
+            Add to Cart
+          </button>
+          <button class="button" type="button" id="removeItem">Remove</button>
+        </div>
+
+        <div class="col-sm-4">
+          <h3 class="item">Kalua Pork Plate</h3>
+          <img
+            src="../img/Kalua-Pig-20.jpg"
+            alt="Kalua Pork with Rice!"
+            width="300px"
+            height="400px"
+          />
+          <p class="price">$15.00</p>
+          <p>
+            Qty:
+            <input id="pork-quantity" type="number" min="0" max="8" size="30" />
+          </p>
+          <button class="button" type="button" id="addItem" onclick="addPork()">
+            Add to Cart
+          </button>
+          <button class="button" type="button" id="removeItem">Remove</button>
+        </div>
+
+        <div class="col-sm-4">
+          <h3 class="item">Loco Moco</h3>
+          <img
+            src="../img/Loco-Moco-4-scaled.jpg"
+            alt="Beef and eggs smothered in gravy!"
+            width="300px"
+            height="400px"
+          />
+          <p class="price">$12.00</p>
+          <p>
+            Qty:
+            <input id="loco-quantity" type="number" min="0" max="8" size="30" />
+          </p>
+          <button class="button" type="button" id="addItem" onclick="addLoco()">
+            Add to Cart
+          </button>
+          <button class="button" type="button" id="removeItem">Remove</button>
+        </div>
+
+        <div class="col-sm-4">
+          <h3 class="item" id="dessert">Malasadas (Dozen)</h3>
+          <img
+            src="../img/Malasadas-11-1365x2048.webp"
+            alt="Malasadas"
+            width="300px"
+            height="400px"
+          />
+          <p class="price">$8.00</p>
+          <p>
+            Qty:
+            <input id="des-quantity" type="number" min="0" max="8" size="30" />
+          </p>
+          <button class="button" type="button" id="addItem" onclick="addDes()">
+            Add to Cart
+          </button>
+          <button class="button" type="button" id="removeItem">Remove</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="restaurant.js"></script>
+  </body>
+</html>

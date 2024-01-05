@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
+
+header {
+    background-color: rgb(74, 55, 31);
+    font-family: 'Big Shoulders Text';
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+body {
+    background-color: rgb(222, 183, 132);
+    margin: 0 auto;
+	padding: 0px;
+    text-align: left;
+    font-family: 'Big Shoulders Text';
+    font-size: 25px;
+}
+
+.form-control {
+    font-size: 20px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
+  }
+
+
+a {
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.row-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 30px 20px;
+}
+
+.btn.btn-primary {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #ffffff;
+    background-color: #95999e;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    border: 0;
+}
+
+.btn.btn-primary:hover {
+    background-color: rgb(74, 55, 31);;
+}
+

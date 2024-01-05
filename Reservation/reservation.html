@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+    
+  </head>
+
+  <body>
+    <header>
+        <a href="../index.html">KANAK ATTACK</a>
+    </header>
+
+    <div class="container">
+        <div class="row-flex">
+          <div class="flex-column-form">
+            <h3>Reservations</h3>
+            <form class="media-centered">
+              <div class="form-group">
+                <p>Please leave your contact information and details of your reservation</p>
+                <input
+                  type="name"
+                  class="form-control"
+                  id="nameRes"
+                  aria-describedby="nameHelp"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="numRes"
+                  placeholder="Enter your phone number"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="personRes"
+                  placeholder="How many people in your party?"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="date"
+                  class="form-control"
+                  id="dateRes"
+                  placeholder="Select a date"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="time"
+                  class="form-control"
+                  id="dateRes"
+                  placeholder="Select a date"
+                />
+              </div>
+              <button type="button" class="btn btn-primary" onclick="submitForm()">Submit</button>
+            </form>
+          </div>
+    <script>
+      const submitForm = () => {
+        const nameOnRes = document.getElementById('nameRes').value;
+        const numOnRes = document.getElementById('numRes').value;
+        const personRes = document.getElementById('personRes').value;
+        const dateRes = document.getElementById('dateRes').value;
+
+        if (!numOnRes) {
+          alert("Please enter a phone number")
+        }
+
+        // if (numOnRes !== Number) {
+        //   alert('Please enter an actual phone number')
+        // }
+
+        console.log(`You have reserved for ${nameOnRes} with contact number: ${numOnRes} for ${personRes} on ${dateRes}`)
+      }
+    </script>
+  </body>
+</html>
